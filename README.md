@@ -13,6 +13,9 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup With Yarn
 
+See [Yarn](https://yarnpkg.com/).
+
+
 ```sh
 yarn
 ```

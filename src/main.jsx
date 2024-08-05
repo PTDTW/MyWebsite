@@ -14,10 +14,10 @@ import Footer from './components/layout/Footer'; // Import SiderBar
 
 
 // WOW.js
-import WOW from 'wowjs';
-import 'animate.css';
+// import WOW from 'wowjs';
+// import 'animate.css';
 
-new WOW.WOW().init();
+// new WOW.WOW().init();
 
 const App = () => {
   return (

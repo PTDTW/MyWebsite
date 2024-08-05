@@ -28,7 +28,7 @@ const SiderBarItems = () => {
   return (
     <>
       {datas.map((item, index) => (
-        <Link className="f:white t:none wow animate__animated animate__fadeInUp" to={item.route} key={index}>
+        <Link className="f:white t:none" to={item.route} key={index}>
           <li className={`f:16px mt:3px ml:5px mr:20px pt:10px pb:10px pl:15px r:5px flex align-items:center ${location.pathname == item.route ? "gradient" : ''} bg:#3d3c3e:hover`}>
             <span className='f:17px pr:5px'><i className={`bi bi-${item.icon}`}></i></span>
             {item.name}

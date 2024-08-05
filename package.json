@@ -2,6 +2,7 @@
   "name": "ptdtw",
   "private": true,
   "version": "0.0.0",
+  "module": "ejs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

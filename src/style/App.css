@@ -1,0 +1,15 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    font-family: Sans-serif;
+}
+
+html{
+    background-color: #141618f4;
+    margin: 0;
+    scrollbar-color: rgb(71, 71, 71) #17181af4;
+    scrollbar-width: thin;
+}
+
+body{
+    margin: 0;
+}

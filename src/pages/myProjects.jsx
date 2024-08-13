@@ -1,28 +1,68 @@
 // import { useState } from 'react'
 
 const projects = [{
-  "name":"",
-  "description":"",
-  "img":"",
-  "tags":[""]
+  "name": "KGame Box",
+  "description": "一款輕量遊戲整合平台，讓你不連網也能玩小遊戲",
+  "status": "長期維護",
+  "tags": ["軟體", "遊戲", "平台", "ELECTRON"],
+  "version": "alpha",
+  "belong": "靈魂之神工作室",
+  "link": "https://github.com/SoulGod-Studio/KGameBox-alpha"
+},
+{
+  "name": "官方網站",
+  "description": "Rhythm這台Discord音樂機器人的官方網站",
+  "status": "長期維護",
+  "tags": ["網站", "Vue3", "Discord機器人"],
+  "version": "formal",
+  "belong": "Rhythm",
+  "link": "https://rhytemsire.vercel.app/"
 }]
 
 const ProjectsCard = () => {
-  return(<></>)
-}
+  return (
+    <>
+      {projects.map((item, index) => (
+        <div key={index}  className="bg:#0d0c0c5a ml:5px mr:5px border:1px|rgb(40|40|40)|solid w:420px r:6px h:160px flex flex-direction:column justify-content:space-between">
+          <div>
+            <div className="mt:20px ml:15px f:20px flex ai:center">
+              <span className="f:gray-48">{item.belong}/</span>
+              <a href={`${item.link}`} className="f:gray-96 text-decoration:none" target="_black">{item.name}</a>
+              <span className="f:gray-32 f:12px border:1px|gray-32|solid r:30px pl:5px pr:5px ml:10px">
+                {item.status}
+              </span>
+              <span className="f:gray-32 f:12px border:1px|gray-32|solid r:30px pl:5px pr:5px ml:5px">
+                {item.version}
+              </span>
+            </div>
+            <div className="mt:6px ml:18px f:gray-38 f:14px">
+              {item.description}
+            </div>
+          </div>
+          <div className="ml:18px mb:10px">
+            {item.tags.map((tag, tagIndex) => (
+               <span className="f:gray-48 f:12px bg:gray-22 border:1px|gray-28|solid r:30px pl:6px pr:6px mr:5px" key={tagIndex}>
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </>
+  );
+};
 
 const MyProjects = () => {
-    return (
-      <>
-        <div className='container mt:20px f:28px f:bold f:white text:center'>
-          作品&專案
-        </div>
-        <div>
-          <ProjectsCard></ProjectsCard>
-        </div>
-      </>
-    )
+  return (
+    <>
+      <div className='container mt:35px f:28px f:bold f:white text:center'>
+        作品&專案
+      </div>
+      <div className="ml:40px mt:40px flex flex-wrap:wrap jc:center@<lg">
+        <ProjectsCard></ProjectsCard>
+      </div>
+    </>
+  )
 }
-  
+
 export default MyProjects
-  

@@ -12,6 +12,13 @@ import './style/App.css'; // Import your CSS
 import SiderBar from './components/layout/SiderBar'; // Import SiderBar
 import Footer from './components/layout/Footer'; // Import SiderBar
 
+import 'aos/dist/aos.css'; 
+import AOS from 'aos';
+
+// Initialize AOS
+AOS.init({
+  duration: 1000, // Duration of the animation in milliseconds
+});
 
 // WOW.js
 // import WOW from 'wowjs';

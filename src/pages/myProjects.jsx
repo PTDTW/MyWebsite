@@ -23,10 +23,10 @@ const ProjectsCard = () => {
   return (
     <>
       {projects.map((item, index) => (
-        <div key={index}  className="bg:#0d0c0c5a ml:5px mr:5px border:1px|rgb(40|40|40)|solid w:420px r:6px h:160px flex flex-direction:column justify-content:space-between">
+        <div key={index}  className="bg:#0d0c0c5a ml:5px mr:5px border:1px|rgb(40|40|40)|solid w:420px r:6px h:160px flex flex-direction:column justify-content:space-between mb:10px@<lg ml:0px@<2xs mr:0px@<2xs w:100%@<xs">
           <div>
             <div className="mt:20px ml:15px f:20px flex ai:center">
-              <span className="f:gray-48">{item.belong}/</span>
+              <span className="f:gray-48 hidden@<2xs">{item.belong}/</span>
               <a href={`${item.link}`} className="f:gray-96 text-decoration:none" target="_black">{item.name}</a>
               <span className="f:gray-32 f:12px border:1px|gray-32|solid r:30px pl:5px pr:5px ml:10px">
                 {item.status}
@@ -55,10 +55,10 @@ const ProjectsCard = () => {
 const MyProjects = () => {
   return (
     <>
-      <div className='container mt:35px f:28px f:bold f:white text:center'>
+      <div className='mt:35px f:28px f:bold f:white text:center'>
         作品&專案
       </div>
-      <div className="ml:40px mt:40px flex flex-wrap:wrap jc:center@<lg">
+      <div className="ml:40px mr:40px mt:40px flex flex-wrap:wrap jc:center@<lg ml:12px@<xs mr:12px@<xs">
         <ProjectsCard></ProjectsCard>
       </div>
     </>

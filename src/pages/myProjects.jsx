@@ -58,7 +58,7 @@ const MyProjects = () => {
       <div className='mt:35px f:28px f:bold f:white text:center'>
         作品&專案
       </div>
-      <div className="ml:40px mr:40px mt:40px flex flex-wrap:wrap jc:center@<lg ml:12px@<xs mr:12px@<xs">
+      <div className="mt:40px flex flex-wrap:wrap jc:center ml:12px@<xs mr:12px@<xs">
         <ProjectsCard></ProjectsCard>
       </div>
     </>

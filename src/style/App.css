@@ -8,6 +8,7 @@ html{
     margin: 0;
     scrollbar-color: rgb(71, 71, 71) #17181af4;
     scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 
 body{

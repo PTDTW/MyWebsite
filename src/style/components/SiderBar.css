@@ -73,3 +73,30 @@ button {
     right: 0;
     left: 48%;
 } */
+
+
+
+
+/* 贊助卡片 */
+@keyframes animationgradienttitle {
+  0% {
+      background-position: 0 1600px;
+  }
+  100% {
+      background-position: 1600px 0;
+  }
+}
+
+
+.c-article__title {
+  font-family: 'Scope One', serif;
+  color: #fc3735;
+  background: -webkit-linear-gradient(left, #F57170,#10DDC2 , #F57170);
+  background-size: 1600px 200px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 3s;
+  animation-name: animationgradienttitle;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}

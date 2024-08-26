@@ -7,7 +7,8 @@ const HeroSection = () => {
   return (
     <div className="rel flex h:100vh  align-items:center justify-content:center rel overflow:hidden">
       <video autoPlay loop muted className="abs top:0 left:0 w:100% h:100% object:cover z:-1">
-        <source src="https://file.hans0805.me/api/public/dl/1xN5jcs4/4K%20Nebula%20Sphere%20Hyperspace%20%23AAVFX%20%F0%9F%8C%94%20SPACE%20Moving%20Background.mp4" type="video/mp4" />
+        {/* <source src="https://file.hans0805.me/api/public/dl/1xN5jcs4/4K%20Nebula%20Sphere%20Hyperspace%20%23AAVFX%20%F0%9F%8C%94%20SPACE%20Moving%20Background.mp4" type="video/mp4" /> */}
+        <source src="https://videos.pexels.com/video-files/856309/856309-hd_1920_1080_30fps.mp4" loop autoPlay type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="abs top:0 left:0 w:full h:full bg:rgb(26|26|26) opacity:0.8 z:1"></div>

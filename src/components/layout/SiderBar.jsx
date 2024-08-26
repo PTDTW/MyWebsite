@@ -44,6 +44,22 @@ const SiderBarItems = () => {
   );
 };
 
+const SponsorCard = () => {
+  return(
+    <div className='p:10px'>
+      <div className='flex ai:center pl:5px'><img src="/Avatars/sengege.png" className='w:45px r:10px' /><p className='pl:10px font:#fff font:bold'>{"三哥哥(sangege)"}</p></div>
+      <div className='c-article__title font:bold font:25px mt:10px pl:5px'>
+        <div>{"網域贊助"}</div>
+      </div>
+      <div className='mt:10px pl:5px'>
+        <a href='https://linktr.ee/san.ge.ge'><img className="w:35px r:15%" src="/icons/linktree.png"/></a>
+        <a className="pl:10px" href='https://coffeehost.net/'><img className="w:35px r:15%" src="/icons/coffee-host.png"/></a>
+      </div>
+    </div>
+  )
+}
+
+
 const SiderBarRwd = ({ toggleSidebar }) => {
   return (
     <div
@@ -63,7 +79,6 @@ const SiderBar = () => {
     setIsSidebarVisible(!isSidebarVisible);
   };
 
-  // Close the sidebar when the route changes
   useEffect(() => {
     setIsSidebarVisible(false);
   }, [location.pathname]);
@@ -81,6 +96,9 @@ const SiderBar = () => {
           <ul className="mt:20px pl:15px list-style:none">
             <SiderBarItems toggleSidebar={toggleSidebar} />
           </ul>
+        </div>
+        <div className='abs left:20px bottom:50px bg:#1e1e1e w:260px h:170px r:10px'>
+          <SponsorCard></SponsorCard>
         </div>
       </div>
       <div className={`z-index:3 fixed bottom:15px left:30px r:100px flex-wrap:wrap width:40px height:40px bg:#060606 hidden block@<md`}>

@@ -52,8 +52,9 @@ const SponsorCard = () => {
         <div>{"網域贊助"}</div>
       </div>
       <div className='mt:10px pl:5px'>
-        <a href='https://linktr.ee/san.ge.ge'><img className="w:35px r:15%" src="/icons/linktree.png"/></a>
+        <a href='https://discord.com/users/523114942434639873'><img className="w:35px r:15%" src="/icons/discord.png"/></a>
         <a className="pl:10px" href='https://coffeehost.net/'><img className="w:35px r:15%" src="/icons/coffee-host.png"/></a>
+        <a className="pl:10px" href='https://linktr.ee/san.ge.ge'><img className="w:35px r:15%" src="/icons/linktree.png"/></a>
       </div>
     </div>
   )

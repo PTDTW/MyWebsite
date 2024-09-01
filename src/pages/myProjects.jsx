@@ -17,6 +17,15 @@ const projects = [{
   "version": "formal",
   "belong": "Rhythm",
   "link": "https://rhytemsire.vercel.app/"
+},
+{
+  "name": "官方網站",
+  "description": "DGS弦樂式Discord機器人的第二代官方網站",
+  "status": "長期維護",
+  "tags": ["網站", "React", "Discord機器人"],
+  "version": "formal",
+  "belong": "DGS弦樂式",
+  "link": "https://dgs-website.vercel.app/"
 }]
 
 const ProjectsCard = () => {

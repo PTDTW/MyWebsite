@@ -55,6 +55,7 @@ const SponsorCard = () => {
         <a href='https://discord.com/users/523114942434639873'><img className="w:35px r:15%" src="/icons/discord.png"/></a>
         <a className="pl:10px" href='https://coffeehost.net/'><img className="w:35px r:15%" src="/icons/coffee-host.png"/></a>
         <a className="pl:10px" href='https://linktr.ee/san.ge.ge'><img className="w:35px r:15%" src="/icons/linktree.png"/></a>
+        <a className="pl:10px" href='https://shdtw.cloud/'><img className="w:35px r:15%" src="/icons/shd.png"/></a>
       </div>
     </div>
   )
@@ -98,7 +99,7 @@ const SiderBar = () => {
             <SiderBarItems toggleSidebar={toggleSidebar} />
           </ul>
         </div>
-        <div className='abs left:20px bottom:50px bg:#1e1e1e w:260px h:170px r:10px bottom:120px@<md w:90%@<md mr:20px@<md'>
+        <div className='abs left:20px bottom:40px bottom:0px@<md bg:#1e1e1e w:260px h:170px r:10px bottom:120px@<md w:90%@<md mr:20px@<md'>
           <SponsorCard></SponsorCard>
         </div>
       </div>

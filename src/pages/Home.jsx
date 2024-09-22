@@ -18,7 +18,7 @@ const HeroSection = () => {
       </div>
       <a className="abs bottom:30px z:2 text:center color:rgb(134|134|134/0.823) text:none color:rgb(235|235|235/0.823):hover transition:all|500ms" href="#contentSection">
         向下滑，查看更多
-        <div><i class="bi bi-caret-down-fill"></i></div>
+        <div><i className="bi bi-caret-down-fill"></i></div>
       </a>
     </div>
 

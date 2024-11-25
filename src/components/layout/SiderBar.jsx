@@ -90,9 +90,9 @@ const SiderBar = () => {
       <div className={`SiderBar bg:#191919 h:100% position:fixed z:3 w:300px m:0 width:100%@<md ${isSidebarVisible ? '' : 'ml:-100%@<md'} ~margin-left|400ms`}>
         <div className="header">
           <div className="flex justify-content:center">
-            <img src="/favicon.png" className="r:100% w:160px mt:10px b:6px|#282828|solid" />
+            <img src="/Avatars/avatar02.png" className="r:100% w:160px mt:10px b:6px|#282828|solid" />
           </div>
-          <div className="name font:#fff font:25px font:bold flex justify-content:center">PTDTW</div>
+          <div className="name font:#fff font:25px font:bold flex justify-content:center">糖豆魚｜PTDTW</div>
         </div>
         <div>
           <ul className="mt:20px pl:15px list-style:none">

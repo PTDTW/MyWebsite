@@ -26,21 +26,30 @@ const projects = [{
   "version": "formal",
   "belong": "DGS弦樂式",
   "link": "https://dgs-website.vercel.app/"
+},
+{
+  "name": "官方網站",
+  "description": "安康高中FRC的社團網站",
+  "status": "長期維護",
+  "tags": ["網站", "高中", "FRC"],
+  "version": "formal",
+  "belong": "安康高中FRC",
+  "link": "https://tren7632.vercel.app/"
 }]
 
 const ProjectsCard = () => {
   return (
     <>
       {projects.map((item, index) => (
-        <div key={index}  className="bg:#0d0c0c5a ml:5px mr:5px border:1px|rgb(40|40|40)|solid w:420px r:6px h:160px flex flex-direction:column justify-content:space-between mb:10px@<lg ml:0px@<2xs mr:0px@<2xs w:100%@<xs">
+        <div key={index}  className="bg:#0d0c0c5a ml:5px mr:5px mb:10px border:1px|rgb(40|40|40)|solid w:420px r:6px h:160px flex flex-direction:column justify-content:space-between gap:10px mb:10px@<lg ml:0px@<2xs mr:0px@<2xs w:100%@<xs">
           <div>
             <div className="mt:20px ml:15px f:20px flex ai:center">
-              <span className="f:gray-48 hidden@<2xs">{item.belong}/</span>
+              <span className="f:gray-50 hidden@<2xs">{item.belong}/</span>
               <a href={`${item.link}`} className="f:gray-96 text-decoration:none" target="_black">{item.name}</a>
-              <span className="f:gray-32 f:12px border:1px|gray-32|solid r:30px pl:5px pr:5px ml:10px">
+              <span className="f:gray-40 f:12px border:1px|gray-40|solid r:30px pl:5px pr:5px ml:10px">
                 {item.status}
               </span>
-              <span className="f:gray-32 f:12px border:1px|gray-32|solid r:30px pl:5px pr:5px ml:5px">
+              <span className="f:gray-40 f:12px border:1px|gray-40|solid r:30px pl:5px pr:5px ml:5px">
                 {item.version}
               </span>
             </div>

@@ -39,7 +39,7 @@ const TeamsCard = () => {
     return (
         <>
             {teams.map((item, index) => (
-                <div key={index} className="bg:#0d0c0c5a ml:5px mt:10px@<3xl mr:5px border:1px|rgb(40|40|40)|solid w:420px r:6px h:150px hflex flex-direction:column justify-content:space-between h:auto@<xs pb:10px@<3xs mb:10px@<lg ml:0px@<2xs mr:0px@<2xs w:100%@<xs">
+                <div key={index} className="bg:#0d0c0c5a ml:5px mt:10px@<3xl pb:20px@<md mr:5px border:1px|rgb(40|40|40)|solid w:420px r:6px h:150px hflex flex-direction:column justify-content:space-between h:auto@<xs pb:10px@<3xs mb:10px@<lg ml:0px@<2xs mr:0px@<2xs w:100%@<xs">
                     <div>
                         <div className="mt:20px ml:15px f:20px flex ai:center">
                             <img src={`${item.logo}`} className="r:100% w:30px mr:5px" />
@@ -91,7 +91,7 @@ const TeamsCard = () => {
 const MyTeams = () => {
     return (
         <>
-            <div className=' mt:35px f:28px f:bold f:white text:center'>
+            <div className=' mt:115px f:28px f:bold f:white text:center'>
                 團隊&工作室
             </div>
             <div className="mt:40px flex flex-wrap:wrap jc:center ml:12px@<xs mr:12px@<xs">

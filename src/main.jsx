@@ -9,10 +9,10 @@ import Router from './router.react.jsx'; // Import Router
 import '@master/css'; // Import MasterCss
 
 import './style/App.css'; // Import your CSS
-import SiderBar from './components/layout/SiderBar'; // Import SiderBar
+import Navbar from './components/layout/Navbar.jsx'; // Import SiderBar
 import Footer from './components/layout/Footer'; // Import SiderBar
 
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 import AOS from 'aos';
 
 // Initialize AOS
@@ -30,15 +30,12 @@ const App = () => {
   return (
     <React.StrictMode>
       <BrowserRouter>
-        <div>
-          <div className={`AppSidebar flex`}>
-            <SiderBar />
-          </div>
-          <div className={`AppRouter ml:300px ml:0@<md ~margin-left|300ms`}>
-            <Router />
-            <div className="mb:20px"></div>
+        <div className='flex flex-direction:column min-height:100vh'>
+            <Navbar />
+            <main className='flex:1'>
+              <Router />
+            </main>
             <Footer />
-          </div>
         </div>
       </BrowserRouter>
     </React.StrictMode>

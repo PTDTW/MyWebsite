@@ -73,7 +73,7 @@ const ProjectsCard = () => {
 const MyProjects = () => {
   return (
     <>
-      <div className='mt:35px f:28px f:bold f:white text:center'>
+      <div className='mt:115px f:28px f:bold f:white text:center'>
         作品&專案
       </div>
       <div className="mt:40px flex flex-wrap:wrap jc:center ml:12px@<xs mr:12px@<xs">

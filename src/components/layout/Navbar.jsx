@@ -47,7 +47,7 @@ const SiderBarItems = ({ closeMobileMenu }) => {
           key={index}
           onClick={closeMobileMenu}
         >
-          <li className={`f:16px mx:10px px:10px py:10px r:5px flex align-items:center ${location.pathname == item.route ? "bg:#4c4c4c" : ''} bg:#3d3c3e:hover ~all|0.2s`}>
+          <li className={`f:16px mx:10px px:8px py:8px r:5px flex align-items:center ${location.pathname == item.route ? "bg:#4c4c4c" : ''} bg:#3d3c3e:hover ~all|0.2s`}>
             <span className='f:17px pr:5px '><i className={`bi bi-${item.icon}`}></i></span>
             {item.name}
           </li>
@@ -124,7 +124,7 @@ const NavBar = () => {
   return (
     <>
       <nav className="fixed top:0 z:100 w:70% left:15% right:15% w:80%@<md left:5%@<md right:5%@<md">
-        <div className={`mt:30px mt:12px@<md flex abs ai:center jc:space-between bg:#0e0e0edf h:3.5rem w:100% z:3 r:10px bd:blur(8) b:#2d2c2c|1px|solid px:20px`}>
+        <div className={`mt:26px mt:12px@<md flex abs ai:center jc:space-between bg:#0e0e0edf h:3.1rem w:100% z:3 r:10px bd:blur(8) b:#2d2c2c|1px|solid px:20px`}>
           <div className='flex ai:center'>
             <img src="/Avatars/avatar02.png" className="r:10px w:30px h:auto mr:10px" />
             <div className="font:#fff font:19px">糖豆魚｜PTDTW</div>

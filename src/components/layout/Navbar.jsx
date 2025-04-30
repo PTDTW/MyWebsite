@@ -30,10 +30,11 @@ const datas = [{
 const links = [{
   icon: "instagram",
   route: "https://www.instagram.com/ptd.tw"
-}, {
+},
+{
   icon: "discord",
   route: "https://discord.gg/bAuKcwCqwX"
-},];
+}];
 
 const SiderBarItems = ({ closeMobileMenu }) => {
   const location = useLocation();
@@ -112,7 +113,7 @@ const NavBar = () => {
   const toggleSidebar = () => {
     setIsSidebarVisible(!isSidebarVisible);
   };
-  
+
   const closeMobileMenu = () => {
     setIsSidebarVisible(false);
   };
@@ -143,7 +144,7 @@ const NavBar = () => {
             <SiderBarRwd toggleSidebar={toggleSidebar} isSidebarVisible={isSidebarVisible} />
           </div> */}
         </div>
-        
+
         {/* Mobile Menu */}
         <div className={`fixed top:0 right:0 w:full h:full bg:#0e0e0edf pt:80px z:50 ${isSidebarVisible ? 'transform:translateX(0)' : 'transform:translateX(100%)'} ~transform|0.3s hidden@>md`}>
           <div>
@@ -158,15 +159,15 @@ const NavBar = () => {
             <SponsorCard />
           </div>
         </div>
-        
+
         {/* Mobile Menu Background Overlay */}
         {isSidebarVisible && (
-          <div 
+          <div
             className="fixed top:0 left:0 w:full h:full bg:#000000|0.7 z:40 hidden@>md"
             onClick={closeMobileMenu}
           />
         )}
-        
+
         {/* Mobile Menu Toggle Button - Fixed at bottom */}
         <div className={`fixed bottom:20px right:20px r:50% w:50px h:50px bg:#0e0e0e flex ai:center jc:center shadow:0|5px|15px|rgba(0,0,0,0.3) z:51 hidden@>md`}>
           <SiderBarRwd toggleSidebar={toggleSidebar} isSidebarVisible={isSidebarVisible} />

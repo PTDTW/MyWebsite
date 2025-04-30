@@ -22,9 +22,9 @@ const HeroSection = () => {
     <>
       <div>
         <div
-          className={`rel flex mx:${margin}% h:${h}vh bg:#0f0f0fed align-items:center justify-content:center overflow:hidden bg:url("/images/hero.png") bg:cover`}
+          className={`rel flex mx:${margin}% h:${h}vh bg:#0f0f0fed align-items:center justify-content:center overflow:hidden bg:url("/images/hero.png") bg:cover
+                     abs::after content:''::after w:100%::after h:100%::after bg:#0e0e0eaa::after z:3::after`}
           style={{
-            // margin: `0px ${margin}%`,
             borderRadius: `${borderRadius}px`,
             transition: 'all 0.1s ease-out'
           }}
@@ -33,7 +33,6 @@ const HeroSection = () => {
             <h1 className={`f:48px font:bold mb:16px f:40px@<md ~font|300ms`}>{"<PTDTW/>"}</h1>
             <p className={`f:18px f:16px@<md ~font|300ms`}>嘗試用新學會的前端框架，親手搭建的個人網站</p>
           </div>
-          <div className={`abs flex mx:${margin}% h:${h}vh w:100% bg:#0e0e0eaa z:3`}></div>
         </div>
       </div>
     </>
